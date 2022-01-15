@@ -7,8 +7,7 @@ import CurrencyExchange from './sample-service.js'
 function getElements(response, startAmount) {
   if (response.target_code === undefined) {
     $('.showResult').text('Selected currency is unavailable, please try another.')
-  }
-  if (response) {
+  } else if (response) {
     $('.showResult').text(`${startAmount} USD exchanges to ${(response.conversion_rate * startAmount).toFixed(2)} in ${response.target_code}`);
   } else {
     $('.showErrors').text(`There was an error: ${response}`);
