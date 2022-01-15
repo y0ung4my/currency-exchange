@@ -1,15 +1,17 @@
 <html lang="en-US">
 <head>
-  <title>Sample Title</title>
+  <title>Currency Exchange</title>
 </head>
 <body>
   <div class="container">
     <h1>Sample Form</h1>
-    <label for="sample-input">Enter an input</label>
-    <input id="city" type="text">
-    <button class="btn-success" id="sampleButton">Do Something</button>
+    <label for="start-amount">Enter amount in USD</label>
+    <input id="start-amount" type="number">
+    <label for="end-currency">Enter new currency abbreviation:</label>
+    <input id="end-currency" type="text">
+    <button class="btn-success" id="submit-button">Get Exchange</button>
     <div class="showErrors"></div>
-    <div class="showSample"></div>
+    <div class="showResult"></div>
   </div>
 </body>
 </html>
